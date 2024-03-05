@@ -1,0 +1,57 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="~/Style/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collection Store RareFinds</title>
+</head>
+<body>
+    <section id="header">
+        @Html.Partial("_Header")
+    </section>
+
+    <section id="banner">
+        @Html.Partial("_Banner")
+    </section>
+
+    <section id="product1" class="section-p1">
+        @Html.Partial("_Products")
+    </section>
+
+    <section id="banner2" class="section-m1">
+        @Html.Partial("_Banner2")
+    </section>
+
+    <section id="sm-banner" class="section-p1">
+        @Html.Partial("_Smbanner")
+    </section>
+
+    <section id="banner3">
+        @Html.Partial("_Banner3")
+    </section>
+
+    <section id="form-section" style="background-color: #b4895c;">
+        @Html.Partial("_Form")
+    </section>
+
+    <footer class="section-p1">
+        @Html.Partial("_Footer")
+    </footer>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - RareFinds</p>
+        </footer>
+    </div>
+</body>
+</html>
+
+
+
